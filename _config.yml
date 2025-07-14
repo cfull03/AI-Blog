@@ -8,9 +8,6 @@ description: >-
 baseurl: "/AI-Blog"       # Needed for GitHub Pages project sites
 url: "https://cfull03.github.io"  # Your GitHub Pages base URL
 
-twitter_username: ""
-github_username: cfull03
-
 # Build settings
 theme: minima
 plugins:
