@@ -3,104 +3,156 @@ layout: home
 title: "AI Talks"
 ---
 
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
 <style>
+  body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Fira Code', monospace;
+  }
+
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   .centered {
-    text-align: center;
-    font-family: "Segoe UI", Roboto, sans-serif;
-    padding: 2rem 1rem;
     max-width: 800px;
     margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .terminal {
+    background: #161b22;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 1px #30363d;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
+  .terminal-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+
+  .red { background: #ff5f56 }
+  .yellow { background: #ffbd2e }
+  .green { background: #27c93f }
+
+  .title {
+    margin-left: auto;
+    font-size: 0.85rem;
+    color: #8b949e;
+  }
+
+  .prompt {
+    color: #00ff87;
   }
 
   .tagline {
-    font-size: 1.2rem;
-    color: #aaa;
-    margin-top: -0.5rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: #8b949e;
+    font-size: 1rem;
     line-height: 1.6;
   }
 
   .cta-button {
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
+    font-size: 0.95rem;
+    border-radius: 6px;
     margin: 0.5rem;
-    text-decoration: none;
     display: inline-block;
-    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+    transition: all 0.25s ease;
   }
 
   .primary {
-    background-color: #00bcd4;
+    background-color: #238636;
     color: #fff;
     border: none;
   }
 
   .primary:hover {
-    background-color: #0097a7;
+    background-color: #2ea043;
   }
 
   .secondary {
-    border: 1px solid #00bcd4;
-    background-color: transparent;
-    color: #00bcd4;
+    border: 1px solid #58a6ff;
+    background: transparent;
+    color: #58a6ff;
   }
 
   .secondary:hover {
-    background-color: #00bcd4;
-    color: #fff;
+    background-color: #58a6ff;
+    color: #0d1117;
   }
 
   .section-divider {
     margin: 3rem 0;
-    border: none;
-    border-top: 1px solid #333;
+    border-top: 1px solid #30363d;
   }
 
   .section-heading {
-    color: #00bcd4;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    color: #58a6ff;
     margin-bottom: 2rem;
   }
 
   .post-preview {
-    margin-bottom: 2rem;
     text-align: left;
+    margin-bottom: 2rem;
+    background: #161b22;
+    padding: 1.25rem;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    transition: transform 0.2s ease;
   }
 
-  .post-preview a {
-    color: #00bcd4;
-    font-weight: 600;
-    font-size: 1.25rem;
-    text-decoration: none;
-  }
-
-  .post-preview a:hover {
-    text-decoration: underline;
+  .post-preview:hover {
+    transform: translateY(-2px);
   }
 
   .post-date {
-    color: #888;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    color: #8b949e;
   }
 
   .archive-link {
-    color: #00bcd4;
+    display: inline-block;
+    margin-top: 1rem;
     font-weight: 500;
-    text-decoration: none;
-  }
-
-  .archive-link:hover {
-    text-decoration: underline;
+    color: #58a6ff;
   }
 </style>
 
 <div class="centered">
-  <h1>🤖 AI Talks</h1>
-  <p class="tagline">
-    Welcome to my digital think tank where I explore the quirks, logic, beauty, and future of Artificial Intelligence.
-  </p>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">~/ai-talks</span>
+    </div>
+    <div class="terminal-body">
+      <p><span class="prompt">ai@localhost</span>:~$ Welcome to <strong>AI Talks</strong></p>
+      <p class="tagline">A digital lab where I explore the quirks, logic, beauty, and future of artificial intelligence.</p>
+    </div>
+  </div>
 
   <a href="{{ '/about/' | relative_url }}" class="cta-button primary">About Me</a>
   <a href="{{ '/' | relative_url }}" class="cta-button secondary">Read All Posts</a>
@@ -119,7 +171,5 @@ title: "AI Talks"
     </div>
   {% endfor %}
 
-  <p>
-    <a href="{{ '/' | relative_url }}" class="archive-link">→ Browse the full archive</a>
-  </p>
+  <a href="{{ '/' | relative_url }}" class="archive-link">→ Browse the full archive</a>
 </div>
