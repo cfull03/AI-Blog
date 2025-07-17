@@ -3,6 +3,7 @@ layout: home
 title: "AI Talks"
 ---
 
+<!-- Load monospaced dev font -->
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 
 <style>
@@ -113,23 +114,42 @@ title: "AI Talks"
     margin-bottom: 2rem;
   }
 
-  .post-preview {
-    text-align: left;
-    margin-bottom: 2rem;
-    background: #161b22;
-    padding: 1.25rem;
-    border-radius: 6px;
+  .post-card {
+    background-color: #161b22;
     border: 1px solid #30363d;
-    transition: transform 0.2s ease;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    transition: transform 0.2s ease, border-color 0.2s ease;
   }
 
-  .post-preview:hover {
-    transform: translateY(-2px);
+  .post-card:hover {
+    transform: translateY(-3px);
+    border-color: #58a6ff;
   }
 
-  .post-date {
+  .post-title {
+    color: #58a6ff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .post-title:hover {
+    text-decoration: underline;
+  }
+
+  .post-meta {
     font-size: 0.85rem;
     color: #8b949e;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-excerpt {
+    color: #c9d1d9;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .archive-link {
@@ -137,6 +157,10 @@ title: "AI Talks"
     margin-top: 1rem;
     font-weight: 500;
     color: #58a6ff;
+  }
+
+  .archive-link:hover {
+    text-decoration: underline;
   }
 </style>
 
@@ -173,4 +197,3 @@ title: "AI Talks"
 
   <a href="{{ '/' | relative_url }}" class="archive-link">→ Browse all posts</a>
 </div>
-
