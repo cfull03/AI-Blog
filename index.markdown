@@ -161,15 +161,16 @@ title: "AI Talks"
 <hr class="section-divider" />
 
 <div class="centered">
-  <h2 class="section-heading">🔥 Recent Posts</h2>
+  <h2 class="section-heading">🧠 Latest Thinking</h2>
 
   {% for post in site.posts limit:3 %}
-    <div class="post-preview">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a><br />
-      <small class="post-date">{{ post.date | date: "%B %d, %Y" }}</small><br />
-      <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+    <div class="post-card">
+      <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <p class="post-meta">{{ post.date | date: "%b %d, %Y" }}</p>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
     </div>
   {% endfor %}
 
-  <a href="{{ '/' | relative_url }}" class="archive-link">→ Browse the full archive</a>
+  <a href="{{ '/' | relative_url }}" class="archive-link">→ Browse all posts</a>
 </div>
+
