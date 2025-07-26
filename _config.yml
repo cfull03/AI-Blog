@@ -4,20 +4,19 @@ email: christianfullerton@icloud.com
 description: >-
   Exploring the future of artificial intelligence, one post at a time.
 
-# You are hosting from a GitHub project repo: https://cfull03.github.io/AI-Blog
-baseurl: "/AI-Blog"       # Needed for GitHub Pages project sites
-url: "https://cfull03.github.io"  # Your GitHub Pages base URL
+# GitHub Pages config
+baseurl: "/AI-Blog"                     # Needed for GitHub Pages project sites
+url: "https://cfull03.github.io"       # Your GitHub Pages base URL
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
+# Markdown engine behavior (optional but safe)
+kramdown:
+  parse_block_html: true
+
 # Minima theme customization
 minima:
   skin: dark
-
-# Optional: exclude build files
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
