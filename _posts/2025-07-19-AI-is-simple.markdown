@@ -5,8 +5,6 @@ date: 2025-07-19 10:00:00 +0000
 categories: ai thoughts
 ---
 
-<div class="ai-post">
-
 > _"Artificial Intelligence isn't magic. It's just math — scaled, trained, and polished."_  
 > — You, after reading this post
 
@@ -103,5 +101,3 @@ Once you realize it’s just algebra + optimization at scale, the mystery fades.
 AI is just math that **learns**. And like all good learners, it starts from something simple.
 
 > _It’s probably just `y = mx + b` wearing a suit._ 😉
-
-</div>
