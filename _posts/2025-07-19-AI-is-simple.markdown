@@ -39,26 +39,18 @@ Put all those together, add more inputs, and you’re thinking like a neural net
 
 ## 🍊 Let’s Talk Fruit (and Math)
 
-Imagine a simple prediction problem: you reach into a fruit basket and grab one item. What’s the probability it’s an **orange**, **pear**, or **apple**?
-
 Let’s say:
 
 - Orange 🍊: 0.34  
 - Pear 🍐: 0.22  
 - Apple 🍎: 0.29
 
-Represent that in matrix form:
-
 Weights (W) = [0.34, 0.22, 0.29]
 Inputs (X) = [1, 0, 0] // Picked an Orange
-
-
-Now do the dot product:
-
 Y = W • X = (0.34 * 1) + (0.22 * 0) + (0.29 * 0) = 0.34
 
 
-✅ Output: **0.34** — the model says there's a 34% chance you picked an orange.
+✅ Output: **0.34**
 
 ---
 
@@ -71,13 +63,6 @@ Take that single equation and scale it up.
 - Optimize them using **gradient descent**
 
 You now have a basic **neural network**.
-
-At its core, it's still:
-
-y = mx + b
-
-
-Just with more data, more dimensions, and a feedback loop.
 
 ---
 
@@ -92,12 +77,11 @@ AI isn’t magic. It’s:
 - Trained with data 📊  
 - Wrapped in fancy acronyms 🤓
 
-Once you realize it’s just algebra + optimization at scale, the mystery fades.
-
 ---
 
 ## 🚀 Final Thought
 
-AI is just math that **learns**. And like all good learners, it starts from something simple.
+AI is just math that **learns**.  
+And like all good learners, it starts from something simple.
 
 > _It’s probably just `y = mx + b` wearing a suit._ 😉
